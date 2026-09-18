@@ -1,0 +1,21 @@
+{
+  "source_language": "English",
+  "target_language": "Amharic",
+  "deployed_model": "Attention Seq2Seq + LSTM",
+  "decoding": "greedy, max_len=32",
+  "embedding_size": 96,
+  "hidden_units": 192,
+  "layers": 1,
+  "dropout": 0.2,
+  "batch_size": 4,
+  "learning_rate": 0.001,
+  "optimizer": "Adam",
+  "loss_function": "CrossEntropyLoss(ignore_index=0)",
+  "max_epochs": 10,
+  "early_stopping_patience": 3,
+  "source_vocab": 7000,
+  "target_vocab": 7000,
+  "tokenizer": "SentencePiece unigram, 7000 pieces per language",
+  "attention_parameters": 7276888,
+  "basic_parameters": 3140440
+}
